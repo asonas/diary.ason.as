@@ -9,7 +9,42 @@ body {
     color: #a8d9e9;
   }
 
-  .head {}
+  .head {
+    h1 {
+      font-size: 48px;
+      text-align: center;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+  .menu {
+    width: 470px;
+    margin: 0 auto;
+    span {
+      font-size: 28px;
+      width: 150px;
+      margin-right: 15px;
+      float: left;
+    }
+    #___gcse_0 {
+      display: inline-block;
+      width: 200px;
+      margin-left: -60px;
+      .gsc-control-cse {
+        padding: 1em 0;
+      }
+      .gsc-input {
+        padding-right: 0;
+      }
+      input.gsc-search-button-v2 {
+        padding: 6px 12px;
+      }
+      #gs_tti50 {
+        padding-right: 0;
+      }
+    }
+  }
 
   .clearfix:after, .clearfix:before {
     content: " ";

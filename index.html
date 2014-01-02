@@ -20,6 +20,29 @@ body {
   width: 900px; }
   body a {
     color: #a8d9e9; }
+  body .head h1 {
+    font-size: 48px;
+    text-align: center; }
+    body .head h1 a {
+      text-decoration: none; }
+  body .menu {
+    width: 500px;
+    margin: 0 auto; }
+    body .menu span {
+      font-size: 28px;
+      width: 150px;
+      margin-right: 15px;
+      float: left; }
+    body .menu #___gcse_0 {
+      display: inline-block;
+      width: 228px;
+      margin-left: -60px; }
+      body .menu #___gcse_0 .gsc-control-cse {
+        padding: 1em 0; }
+      body .menu #___gcse_0 .gsc-input {
+        padding-right: 0; }
+      body .menu #___gcse_0 input.gsc-search-button-v2 {
+        padding: 6px 12px; }
   body .clearfix:after, body .clearfix:before {
     content: " ";
     display: table; }
@@ -83,17 +106,26 @@ Hatena.Star.SiteConfig = {
 
   <body id="{block:IfDisqusShortname}{block:PermalinkPage}with-disqus{/block:PermalinkPage}{/block:IfDisqusShortname}
   {block:PermalinkPage} permalink-page{/block:PermalinkPage}">
+<script>
+  (function() {
+    var cx = '015552759263909167342:nbcgawg8moa';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
 
-  <div id="head">
+  <div class="head clearfix">
     <h1><a href="/">{Title}</a></h1>
-
-        <div style="width: 540px; margin: 10px auto 0 auto; display: none; {block:HasPages}display: block;{/block:HasPages}{block:AskEnabled}display: block;{/block:AskEnabled}{block:SubmissionsEnabled}display: block;{/block:SubmissionsEnabled}">
-            {block:HasPages}
-            {block:Pages}<a href="{URL}">{Label}</a>&nbsp;&nbsp;&nbsp;{/block:Pages}
-            {/block:HasPages}
-            {block:AskEnabled}<a href="/ask">{AskLabel}</a>&nbsp;&nbsp;&nbsp;{/block:AskEnabled}
-            {block:SubmissionsEnabled}<a href="/submit">{SubmitLabel}</a>{/block:SubmissionsEnabled}
-        </div>
+  </div>
+  <div class="menu clearfix">
+    <span><a href="http://asonas.hatenablog.com">Hatena Blog</a></span>
+    <span><a href="/archive">Archive</a></span>
+    <gcse:search></gcse:search>
   </div>
 
   <div class="posts">
