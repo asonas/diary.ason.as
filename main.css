@@ -11,24 +11,38 @@ body {
     display: table; }
   body .clearfix:after {
     clear: both; }
-  body .posts .post img {
-    width: 940px;
-    margin-left: -20px; }
-  body .posts .post .title {
+  body .posts .post {
+    margin-bottom: 60px; }
+    body .posts .post .image img {
+      width: 940px;
+      margin-left: -20px; }
+    body .posts .post ul.control {
+      list-style: none;
+      width: 105px;
+      margin: 0 auto;
+      padding: 0; }
+      body .posts .post ul.control li {
+        float: left;
+        margin-right: 20px; }
+      body .posts .post ul.control li:last-child {
+        margin-right: 0; }
+    body .posts .post .date {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd; }
+    body .posts .post .body {
+      font-size: 18px;
+      padding: 0 10px; }
+  body .posts .post.text .title {
     font-size: 36px; }
-  body .posts .post .date {
+  body .posts .post.text .date {
     font-size: 12px;
     padding-bottom: 10px;
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd; }
-  body .posts .post .body {
-    font-size: 18px;
-    padding: 0 10px; }
-  body .posts .post ul.control {
-    list-style: none;
-    width: 100px;
-    margin: 0 auto;
-    padding: 0; }
-    body .posts .post ul.control li {
-      float: left;
-      margin-right: 20px; }
+  body .posts .post.photo .date {
+    font-size: 24px; }
+  body .posts .post.quote .thequote {
+    font-size: 36px; }
+  body .posts .post.quote .date {
+    font-size: 24px; }
