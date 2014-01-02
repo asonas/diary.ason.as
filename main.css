@@ -23,7 +23,9 @@ body {
       padding: 0; }
       body .posts .post ul.control li {
         float: left;
-        margin-right: 20px; }
+        margin-right: 20px;
+        font-size: 15px;
+        line-height: 19px; }
       body .posts .post ul.control li:last-child {
         margin-right: 0; }
     body .posts .post .date {
