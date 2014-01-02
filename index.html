@@ -63,6 +63,20 @@ body {
 
     {CustomCSS}
     </style>
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript">
+Hatena.Star.Token = '5d1c294b23cdbc9206d27a7cbc4e547fb5e873d2';
+Hatena.Star.SiteConfig = {
+  entryNodes: {
+    'div.post': {
+      uri: 'a.permalink',
+      title: 'div.posttitle',
+      container: '.posttitle'
+    }
+  }
+};
+</script>
   </head>
 
   <body id="{block:IfDisqusShortname}{block:PermalinkPage}with-disqus{/block:PermalinkPage}{/block:IfDisqusShortname}
@@ -98,11 +112,11 @@ body {
     {block:Link}
     <div class="post link">
       {block:Date}
-      <span class="permalink">
-          <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+      <div class="permalink posttitle">
+          <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
           {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
           {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
-      </span>
+      </div>
       {/block:Date}
       <div class="realpost"><div>
       <h2><a href="{URL}">{Name}</a></h2>
@@ -110,11 +124,12 @@ body {
       </div></div>
     </div>
     {/block:Link}
+
     {block:Answer}
     <div class="post answer">
       {block:Date}
-      <span class="permalink">
-          <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+      <div class="permalink posttitle">
+          <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
           {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
           {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
       </span>
@@ -128,8 +143,8 @@ body {
     {block:Chat}
     <div class="post chat">
       {block:Date}
-      <span class="permalink">
-        <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+      <div class="permalink posttitle">
+        <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
         {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
         {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
       </span>
@@ -145,11 +160,12 @@ body {
       </div></div>
     </div>
     {/block:Chat}
+
     {block:Video}
     <div class="post video">
       {block:Date}
-      <span class="permalink">
-          <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+      <div class="permalink posttitle">
+          <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
           {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
           {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
       </span>
@@ -164,8 +180,8 @@ body {
     {block:Audio}
     <div class="post audio">
       {block:Date}
-      <span class="permalink">
-          <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+      <div class="permalink posttitle">
+          <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
           {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
           {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
       </span>
@@ -184,14 +200,9 @@ body {
     {block:Photo}
     <div class="post photo">
       <div class="realpost">
-        <div class="title">
-        {block:Title}
-          <a href="{Permalink}">{Title}</a>
-        {/block:Title}
-        </div>
-        <div class="date">
+        <div class="date posttitle">
           {block:Date}
-          <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+          <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
           {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
           {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
           {/block:Date}
@@ -217,8 +228,8 @@ body {
     {block:Quote}
     <div class="post quote">
       {block:Date}
-      <span class="permalink date">
-          <a href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
+      <div class="permalink date posttitle">
+          <a class="permalink" href="{Permalink}">{ShortMonth} {DayOfMonth}, {Year}</a><br />
           {block:IfDisqusShortName}{block:IfShowCommentCountOnFrontpage}<a href="{Permalink}#disqus_thread"></a><br />
           {/block:IfShowCommentCountOnFrontpage}{/block:IfDisqusShortName}{block:IfShowNotes}{NoteCountWithLabel}{/block:IfShowNotes}
       </span>
@@ -241,9 +252,9 @@ body {
     {block:Text}
     <div class="post text">
       <div class="realpost">
-        <div class="title">
+        <div class="title posttitle">
         {block:Title}
-          <a href="{Permalink}">{Title}</a>
+          <a class="permalink" href="{Permalink}">{Title}</a>
         {/block:Title}
         </div>
         <div class="date">
