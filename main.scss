@@ -5,104 +5,104 @@ body {
   font-color: #333;
   margin: 0 auto;
   width: 900px;
+}
 
-  a {
-    color: #a8d9e9;
+a {
+  color: #a8d9e9;
+}
+
+.clearfix:after, .clearfix:before {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.head {
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    a {
+      text-decoration: none;
+    }
   }
-
-  .head {
-    h1 {
-      font-size: 48px;
+}
+ul.menu {
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+  li {
+    font-size: 28px;
+    margin-right: 15px;
+    float: left;
+    a {
       text-align: center;
-      a {
-        text-decoration: none;
-      }
+      display: inherit;
     }
   }
-  ul.menu {
-    width: 490px;
-    margin: 0 auto;
-    list-style: none;
-    li {
-      font-size: 28px;
-      width: 150px;
-      margin-right: 15px;
-      float: left;
-      a {
-        text-align: center;
-        display: inherit;
+  li:last-child {
+    margin-right: 0;
+  }
+}
+
+.posts {
+  .post {
+    margin-bottom: 60px;
+    .image img {
+      width: 940px;
+      margin-left: -20px;
+    }
+    ul.control {
+      list-style: none;
+      width: 105px;
+      margin: 0 auto;
+      padding: 0;
+      li {
+        float: left;
+        margin-right: 20px;
+        font-size: 15px;
+        line-height: 19px;
+      }
+      li:last-child {
+        margin-right: 0;
       }
     }
-    li:last-child {
-      margin-right: 0;
+    .date {
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .body {
+      font-size: 18px;
+      padding: 0 10px;
     }
   }
 
-  .clearfix:after, .clearfix:before {
-    content: " ";
-    display: table;
+  .post.text {
+    .title {
+      font-size: 36px;
+    }
+    .date {
+      font-size: 12px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
   }
-  .clearfix:after {
-    clear: both;
+
+  .post.photo {
+    .date {
+      font-size: 24px;
+    }
   }
-  .posts {
-    .post {
-      margin-bottom: 60px;
-      .image img {
-        width: 940px;
-        margin-left: -20px;
-      }
-      ul.control {
-        list-style: none;
-        width: 105px;
-        margin: 0 auto;
-        padding: 0;
-        li {
-          float: left;
-          margin-right: 20px;
-          font-size: 15px;
-          line-height: 19px;
-        }
-        li:last-child {
-          margin-right: 0;
-        }
-      }
-      .date {
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ddd;
-      }
-      .body {
-        font-size: 18px;
-        padding: 0 10px;
-      }
-    }
 
-    .post.text {
-      .title {
-        font-size: 36px;
-      }
-      .date {
-        font-size: 12px;
-        padding-bottom: 10px;
-        margin-bottom: 20px;
-        border-bottom: 1px solid #ddd;
-      }
+  .post.quote {
+    .thequote {
+      font-size: 36px;
     }
-
-    .post.photo {
-      .date {
-        font-size: 24px;
-      }
-    }
-
-    .post.quote {
-      .thequote {
-        font-size: 36px;
-      }
-      .date {
-        font-size: 24px;
-      }
+    .date {
+      font-size: 24px;
     }
   }
 }
