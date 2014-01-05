@@ -1,6 +1,6 @@
 body {
   background-color: #fff;
-  font-family: "Kozuka Gothic Pro" "Hiragino Kakugo ProN";
+  font-family: "Kozuka Gothic Pro" "HiraKakuProN-W3";
   font-weight: 200;
   font-color: #333;
   margin: 0 auto;
@@ -12,26 +12,20 @@ body {
     text-align: center; }
     body .head h1 a {
       text-decoration: none; }
-  body .menu {
-    width: 470px;
-    margin: 0 auto; }
-    body .menu span {
+  body ul.menu {
+    width: 490px;
+    margin: 0 auto;
+    list-style: none; }
+    body ul.menu li {
       font-size: 28px;
       width: 150px;
       margin-right: 15px;
       float: left; }
-    body .menu #___gcse_0 {
-      display: inline-block;
-      width: 200px;
-      margin-left: -60px; }
-      body .menu #___gcse_0 .gsc-control-cse {
-        padding: 1em 0; }
-      body .menu #___gcse_0 .gsc-input {
-        padding-right: 0; }
-      body .menu #___gcse_0 input.gsc-search-button-v2 {
-        padding: 6px 12px; }
-      body .menu #___gcse_0 #gs_tti50 {
-        padding-right: 0; }
+      body ul.menu li a {
+        text-align: center;
+        display: inherit; }
+    body ul.menu li:last-child {
+      margin-right: 0; }
   body .clearfix:after, body .clearfix:before {
     content: " ";
     display: table; }
