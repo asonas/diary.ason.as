@@ -64,9 +64,11 @@ ul.menu {
   .posts .post .body {
     font-size: 18px;
     padding: 0 10px; }
+.posts .post.link .title,
 .posts .post.quote .title,
 .posts .post.text .title {
   font-size: 36px; }
+.posts .post.link .date,
 .posts .post.quote .date,
 .posts .post.text .date {
   font-size: 12px;

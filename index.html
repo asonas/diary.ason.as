@@ -2,6 +2,8 @@
 <html lang="ja">
   <head>
     <link rel="shortcut icon" href="{Favicon}" />
+    <link rel="stylesheet" href="http://static.tumblr.com/4b0wjep/ywyn08xtr/main.css" type="text/css">
+
     {block:Description}<meta name="description" content="{MetaDescription}" />{/block:Description}
     <title>{Title}{block:SearchPage}: {lang:Search results for SearchQuery}{/block:SearchPage}{block:PostSummary}: {PostSummary}{/block:PostSummary}</title>
     <!-- Default values -->
@@ -10,7 +12,7 @@
     <meta name="text:Disqus Shortname" content="" />
     <meta name="if:Show comment count on frontpage" content="0" />
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://raw.github.com/asonas/diary.ason.as/master/main.css">
+
 
     <style>
     {CustomCSS}
@@ -68,7 +70,9 @@ Hatena.Star.SiteConfig = {
       {/block:Date}
       <div class="realpost"><div>
       <h2><a href="{URL}">{Name}</a></h2>
+      <div class="body">
       {block:Description}{Description}{/block:Description}
+      </div>
       </div></div>
     </div>
     {/block:Link}
